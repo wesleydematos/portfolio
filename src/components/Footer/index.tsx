@@ -9,7 +9,7 @@ import { Button } from "@/styles/Buttons";
 
 export const Footer = (): JSX.Element => {
   return (
-    <FooterWrapper id="social-media">
+    <FooterWrapper id="about-me">
       <Container>
         <Flex>
           <UserImage
@@ -21,10 +21,17 @@ export const Footer = (): JSX.Element => {
           />
           <Box css={{ marginLeft: "$2" }}>
             <Text type="heading4" color="grey5" css={{ marginBottom: "$2" }}>
-              Thank you! {/* <HandEffect /> */}
+              Thank you for getting here! {/* <HandEffect /> */}
             </Text>
             <Text type="body1" color="grey2">
-              Follow me on my social networks and let's talk
+              My name Wesley, I'm 22 years old, for just over one year I've been
+              learning programming daily and producing projects weekly, I'm a
+              junior fullstack developer trained at Academy Brasil and I'm
+              looking for my first opportunity professional.
+            </Text>
+            <br />
+            <Text type="body1" color="grey2">
+              Follow me on my social networks and let's talk.
             </Text>
           </Box>
         </Flex>
