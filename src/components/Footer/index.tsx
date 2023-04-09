@@ -21,17 +21,10 @@ export const Footer = (): JSX.Element => {
           />
           <Box css={{ marginLeft: "$2" }}>
             <Text type="heading4" color="grey5" css={{ marginBottom: "$2" }}>
-              Thank you for getting here! {/* <HandEffect /> */}
+              Thank you! {/* <HandEffect /> */}
             </Text>
             <Text type="body1" color="grey2">
-              My name Wesley, I'm 22 years old, for just over one year I've been
-              learning programming daily and producing projects weekly, I'm a
-              junior fullstack developer trained at Academy Brasil and I'm
-              looking for my first opportunity professional.
-            </Text>
-            <br />
-            <Text type="body1" color="grey2">
-              Follow me on my social networks and let's talk.
+              Follow me on my social networks and let's talk
             </Text>
           </Box>
         </Flex>

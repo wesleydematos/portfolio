@@ -12,7 +12,7 @@ import { Contacts } from "@/components/Contacts";
 import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaShare } from "react-icons/fa";
 
 // Page Style
 import {
@@ -26,10 +26,11 @@ import {
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
 } from "./style";
+import { ProjectLink } from "@/components/Project/style";
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/wesleydematos/portfolio`;
 
   return (
     <main id="home">
@@ -47,7 +48,7 @@ export const Home = (): JSX.Element => {
               <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+              I{" "}
               <Text as="span" type="heading1" color="brand1">
                 love
               </Text>{" "}
@@ -58,8 +59,15 @@ export const Home = (): JSX.Element => {
               projects
             </Text>
             <Text type="body1" color="grey2">
+              I'm 22 years old, my hobbies are watching sports and movies and
+              listening to music. For just over one year I've been learning
+              programming daily and producing projects weekly, I'm a junior
+              fullstack developer trained at Academy Brasil and I'm looking for
+              my first opportunity professional.
+            </Text>
+            <Text type="body1" color="grey2">
               Discover here in this environment, created especially for you, all
-              my projects and technologies
+              my projects and technologies...
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
@@ -95,10 +103,13 @@ export const Home = (): JSX.Element => {
                 My projects
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
-                <Text as="span" color="brand5">
-                  side projects
-                </Text>
+                Some of my projects.
+                <ProjectLink
+                  target="_blank"
+                  href={`https://github.com/wesleydematos?tab=repositories`}
+                >
+                  <FaShare /> See all
+                </ProjectLink>
               </Text>
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContent>
