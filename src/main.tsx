@@ -4,6 +4,7 @@ import { GlobalStyle } from "@/styles/Global";
 import { Home } from "@/pages/home";
 import { NavBar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import "./lib/i18n";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
