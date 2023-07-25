@@ -1,5 +1,17 @@
 {
   "translation": {
-    "test": "test english"
+    "hello": "Hello, my name is",
+    "i": "I",
+    "love": "love",
+    "creating": "creating and",
+    "developing": "developing",
+    "projects": "projects",
+    "sfDescription": "I'm a full-stack developer 😄. I've been studying programming since 2022 and have been working voluntarily on development since May of 2023. I'm a junior developer trained at Kenzie Academy Brasil, and I'm looking for my first professional opportunity.",
+    "discover": "Discover here in this environment, created especially for you, all my projects and technologies...",
+    "seeProj": "See Projects",
+    "seePort": "See my portfolio source code",
+    "myProj": "My projects",
+    "someProj": "Some of my projects.",
+    "seeAll": "See all"
   }
 }

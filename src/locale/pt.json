@@ -1,5 +1,17 @@
 {
   "translation": {
-    "test": "teste port"
+    "hello": "Olá, meu nome é",
+    "i": "Eu",
+    "love": "gosto de",
+    "creating": "criar e",
+    "developing": "desenvolver",
+    "projects": "projetos",
+    "sfDescription": "Sou um desenvolvedor full-stack 😄. Estudo programação desde 2022 e trabalho voluntariamente com desenvolvimento desde maio de 2023. Sou um desenvolvedor júnior formado na Kenzie Academy Brasil e estou em busca da minha primeira oportunidade profissional.",
+    "discover": "Descubra aqui neste ambiente, criado especialmente para você, todos os meus projetos e tecnologias...",
+    "seeProj": "Ver Projetos",
+    "seePort": "Ver código do portfolio",
+    "myProj": "Meus projetos",
+    "someProj": "Alguns dos meus projetos.",
+    "seeAll": "Ver todos"
   }
 }

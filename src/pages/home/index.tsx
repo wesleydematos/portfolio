@@ -1,20 +1,16 @@
-// Styles
 import { Container, Flex } from "@/styles/Global";
 import { Text } from "@/styles/Text";
 import { Button } from "@/styles/Buttons";
 
-// Components
 import { Stack } from "@/components/Stack";
 import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
 
-// Data
 import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
 import { FaGithub, FaShare } from "react-icons/fa";
 
-// Page Style
 import {
   Header,
   HeaderContent,
@@ -28,9 +24,13 @@ import {
 } from "./style";
 import { ProjectLink } from "@/components/Project/style";
 
+import { useTranslation } from "react-i18next";
+
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
   const portfolioUrl = `https://github.com/wesleydematos/portfolio`;
+
+  const { t } = useTranslation();
 
   return (
     <main id="home">
@@ -45,36 +45,33 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">
+                {t("hello")} {userData.nameUser}!
+              </Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-              I{" "}
+              {t("i")}{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                {t("love")}
               </Text>{" "}
-              creating and{" "}
+              {t("creating")}{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+                {t("developing")}
               </Text>{" "}
-              projects
+              {t("projects")}
             </Text>
             <Text type="body1" color="grey2">
-              I'm 22 years old, my hobbies are watching sports and movies and
-              listening to music. For just over one year I've been learning
-              programming daily and producing projects weekly, I'm a junior
-              fullstack developer trained at Academy Brasil and I'm looking for
-              my first opportunity professional.
+              {t("sfDescription")}
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies...
+              {t("discover")}
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                {t("seeProj")}
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                {t("seePort")}
               </Button>
               <Button
                 color="grey5"
@@ -100,15 +97,15 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
-                My projects
+                {t("myProj")}
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Some of my projects.
+                {t("someProj")}
                 <ProjectLink
                   target="_blank"
                   href={`https://github.com/wesleydematos?tab=repositories`}
                 >
-                  <FaShare /> See all
+                  <FaShare /> {t("seeAll")}
                 </ProjectLink>
               </Text>
             </ProjectsAreaSocialMediaMessage>
