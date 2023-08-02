@@ -16,6 +16,8 @@ import { FaWhatsapp, FaEnvelopeOpen, FaLinkedin } from "react-icons/fa";
 import { useRef } from "react";
 import { userData } from "@/utils/userData";
 
+import { useTranslation } from "react-i18next";
+
 export const Contacts = () => {
   const ref = useRef(null);
 
@@ -24,6 +26,8 @@ export const Contacts = () => {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [0.1, 0.9]);
 
+  const { t } = useTranslation();
+
   return (
     <ContactSection id="contact">
       <Container>
@@ -31,11 +35,11 @@ export const Contacts = () => {
           <motion.div style={{ scale }}>
             <ContactSectionText>
               <Text type="heading2" color="grey4">
-                Let's talk and{" "}
+                {t("letsTalk")}{" "}
                 <Text as="span" type="heading2" color="brand1">
-                  develop solutions for your company
+                  {t("develop")}
                 </Text>
-                , together!
+                {t("together")}
               </Text>
             </ContactSectionText>
           </motion.div>
@@ -46,11 +50,10 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My Whatsapp
+                  {t("whatsapp")}
                 </Text>
                 <Text color="grey2" type="body2">
-                  I'm available for a voice chat, let's about creativity
-                  together?
+                  {t("available")}
                 </Text>
                 <Text
                   as="a"
@@ -59,7 +62,7 @@ export const Contacts = () => {
                   target="_blank"
                   href={`https://api.whatsapp.com/send?phone=+55+${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
                 >
-                  Talk Now
+                  {t("talkNow")}
                 </Text>
               </ContactCardContent>
             </ContactCard>
@@ -70,10 +73,10 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My email
+                  {t("email")}
                 </Text>
                 <Text color="grey2" type="body2">
-                  Send me an email reporting feedbacks, suggestions and ideas
+                  {t("sendEmail")}
                 </Text>
 
                 <Text
@@ -86,7 +89,7 @@ export const Contacts = () => {
                     (window.location.href = `mailto:${userData.emailUser}`)
                   }
                 >
-                  Send me an email
+                  {t("sendMeEmail")}
                 </Text>
               </ContactCardContent>
             </ContactCard>
@@ -96,11 +99,10 @@ export const Contacts = () => {
               </ContactCardImage>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
-                  My LinkedIn
+                  {t("linkedin")}
                 </Text>
                 <Text color="grey2" type="body2">
-                  We can create more constant interactions as well as a sharing
-                  network
+                  {t("interactions")}
                 </Text>
                 <Text
                   as="a"
@@ -109,7 +111,7 @@ export const Contacts = () => {
                   target="_blank"
                   href={linkedInUrl}
                 >
-                  Go to LinkedIn now
+                  {t("goLinkedin")}
                 </Text>
               </ContactCardContent>
             </ContactCard>
