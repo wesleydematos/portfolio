@@ -15,6 +15,8 @@ import { IoClose } from "react-icons/io5";
 import { Button } from "@/styles/Buttons";
 import { Container, Flex } from "@/styles/Global";
 
+import { useTranslation } from "react-i18next";
+
 export interface MenuButtonOpen {
   open: Boolean;
   setOpen: (value: Boolean) => void;
@@ -31,12 +33,27 @@ export const NavBar = (): JSX.Element => {
     setOpen(!open);
   };
 
+  const {
+    i18n: { changeLanguage, language },
+  } = useTranslation();
+
+  const [lang, setLang] = useState(language);
+
+  const handleChangeLanguage = () => {
+    const newLang = lang === "en" ? "pt" : "en";
+    changeLanguage(newLang);
+    setLang(newLang);
+  };
+
   return (
     <NavbarWrapper>
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
-            <LogoTipoText>{userData.nameUser}</LogoTipoText>
+            <button type="button" onClick={handleChangeLanguage}>
+              {lang === "en" ? "pt" : "en"}
+            </button>
+            ;<LogoTipoText>{userData.nameUser}</LogoTipoText>
           </LogoTipo>
           {isWide && (
             <Button
@@ -55,19 +72,21 @@ export const NavBar = (): JSX.Element => {
 };
 
 export const NavLinks = (): JSX.Element => {
+  const { t } = useTranslation();
+
   return (
     <NavbarLinks>
       <Button type="btLink" as="a" color="grey4" href={`#home`}>
-        About Me
+        {t("aboutMe")}
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#projects`}>
-        Projects
+        {t("projectsH")}
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#contact`}>
-        Contact
+        {t("contact")}
       </Button>
       <Button type="btLink" as="a" color="grey4" href={`#about-me`}>
-        Social Media
+        {t("social")}
       </Button>
     </NavbarLinks>
   );
