@@ -30,6 +30,10 @@
     "aboutMe": "About Me",
     "projectsH": "Projects",
     "contact": "Contact",
-    "social": "Social Media"
+    "social": "Social Media",
+    "seeDemo": "See demo",
+    "githubCode": "Github Code",
+    "primaryNot": "Primary language not identified",
+    "primary": "Primary Languages: "
   }
 }
