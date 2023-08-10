@@ -1,6 +1,5 @@
 import { styled } from "@/styles/stitches.config";
 import { Flex, Container } from "@/styles/Global";
-import { Button } from "@/styles/Buttons";
 
 export const Navbar = styled("nav", {
   background: "$grey0",
@@ -24,6 +23,18 @@ export const Navbar = styled("nav", {
 
 export const LogoTipo = styled(Flex, {
   alignItems: "center",
+});
+
+export const Langs = styled(Flex, {
+  alignItems: "center",
+
+  [`& button`]: {
+    cursor: "pointer",
+
+    [`& img`]: {
+      padding: "2px 2px 0 2px",
+    },
+  },
 });
 
 export const LogoTipoText = styled("span", {

@@ -8,6 +8,7 @@ import {
   LogoTipoText,
   NavbarLinks,
   NavbarMobileArea,
+  Langs,
 } from "./style";
 
 import { FaBars } from "react-icons/fa";
@@ -16,6 +17,9 @@ import { Button } from "@/styles/Buttons";
 import { Container, Flex } from "@/styles/Global";
 
 import { useTranslation } from "react-i18next";
+
+import BRlogo from "@/public/static/img/flags/brazil_icon.jpg";
+import USlogo from "@/public/static/img/flags/us-icon.png";
 
 export interface MenuButtonOpen {
   open: Boolean;
@@ -50,9 +54,22 @@ export const NavBar = (): JSX.Element => {
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
-            <button type="button" onClick={handleChangeLanguage}>
-              {lang === "en" ? "pt" : "en"}
-            </button>
+            <Langs>
+              <button
+                type="button"
+                onClick={handleChangeLanguage}
+                disabled={lang == "en"}
+              >
+                <img src={USlogo} alt="USA flag" />
+              </button>
+              <button
+                type="button"
+                onClick={handleChangeLanguage}
+                disabled={lang == "pt"}
+              >
+                <img src={BRlogo} alt="Brazil flag" />
+              </button>
+            </Langs>
             ;<LogoTipoText>{userData.nameUser}</LogoTipoText>
           </LogoTipo>
           {isWide && (
