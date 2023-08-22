@@ -33,15 +33,6 @@ export const Project = (): JSX.Element => {
         "https://react-entrega-s1-nu-kenzie-wesleydematos-3.vercel.app/",
     },
     {
-      id: 624082641,
-      name: "Bandkamp",
-      language: "Python",
-      description:
-        "project that simulates the creation of users, songs and albums",
-      html_url: "https://github.com/wesleydematos/bandkamp",
-      homepage: null,
-    },
-    {
       id: 570224458,
       name: "Kenziehub",
       language: "TypeScript - React",
@@ -50,22 +41,13 @@ export const Project = (): JSX.Element => {
       homepage: "https://react-entrega-kenzie-hub-wesleymatos.vercel.app/",
     },
     {
-      id: 616714403,
-      name: "Backend challenge",
-      language: "TypeScript - NodeJs",
+      id: 570224459,
+      name: "Soulful",
+      language: "React",
       description:
-        "API responsible for managing creation of contacts and customers.",
-      html_url: "https://github.com/wesleydematos/desafiofullstack-1-backend",
-      homepage: null,
-    },
-    {
-      id: 556895644,
-      name: "Soccer Market",
-      language: "HTML - CSS",
-      description: "Soccer e-commerce",
-      html_url: "https://github.com/wesleydematos/soccer-market",
-      homepage:
-        "https://kenzie-academy-brasil-developers.github.io/m1-entrega-capstone-ecommerce-wesleydematos/",
+        "The Digital Passport with collectible memories. A unique project that combines our love for travel, technology, and blockchain to provide a meaningful experience for avid adventurers and wanderers alike.",
+      html_url: "https://github.com/wesleydematos/digital-memory-passport",
+      homepage: "https://soulfullab.xyz/",
     },
   ];
 
