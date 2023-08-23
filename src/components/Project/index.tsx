@@ -13,13 +13,14 @@ import { FaGithub, FaShare } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 export const Project = (): JSX.Element => {
+  const { t } = useTranslation();
+
   const repos = [
     {
       id: 570222011,
       name: "Pro Support",
-      language: "TypeScript - React",
-      description:
-        "Platform with the objective of managing doubts and impediments of a developer.",
+      language: "Node - React",
+      description: t("proSupport"),
       html_url: "https://github.com/wesleydematos/ProSupport",
       homepage: "https://pro-support.vercel.app/",
     },
@@ -27,7 +28,7 @@ export const Project = (): JSX.Element => {
       id: 570222872,
       name: "NuKenzie",
       language: "TypeScript - React",
-      description: "Application for financial management.",
+      description: t("nuKenzie"),
       html_url: "https://github.com/wesleydematos/nukenzie",
       homepage:
         "https://react-entrega-s1-nu-kenzie-wesleydematos-3.vercel.app/",
@@ -36,7 +37,7 @@ export const Project = (): JSX.Element => {
       id: 570224458,
       name: "Kenziehub",
       language: "TypeScript - React",
-      description: "Application made to manage technologies and learning",
+      description: t("kenziehub"),
       html_url: "https://github.com/wesleydematos/kenziehub",
       homepage: "https://react-entrega-kenzie-hub-wesleymatos.vercel.app/",
     },
@@ -44,14 +45,11 @@ export const Project = (): JSX.Element => {
       id: 570224459,
       name: "Soulful",
       language: "React",
-      description:
-        "The Digital Passport with collectible memories. A unique project that combines our love for travel, technology, and blockchain to provide a meaningful experience for avid adventurers and wanderers alike.",
+      description: t("soulful"),
       html_url: "https://github.com/wesleydematos/digital-memory-passport",
       homepage: "https://soulfullab.xyz/",
     },
   ];
-
-  const { t } = useTranslation();
 
   return (
     <>
