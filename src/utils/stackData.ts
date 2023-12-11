@@ -17,6 +17,7 @@ import {
   FaPhp,
   FaJava,
 } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const stackData = [
   {
@@ -49,4 +50,5 @@ export const stackData = [
   { title: "PostgreSQL", img: SiPostgresql },
   { title: "PHP", img: FaPhp },
   { title: "Java", img: FaJava },
+  { title: "Next.js", img: TbBrandNextjs },
 ];

@@ -14,8 +14,24 @@ import { useTranslation } from "react-i18next";
 
 export const Project = (): JSX.Element => {
   const { t } = useTranslation();
-
+  
   const repos = [
+    {
+      id: 575224459,
+      name: "Elite Suplementos",
+      language: "Next.js",
+      description: t("elite"),
+      html_url: "https://github.com/wesleydematos/elite-do-suplemento",
+      homepage: "https://elite-suplementos.vercel.app/",
+    },
+    {
+      id: 570264459,
+      name: "Carland",
+      language: "Next.js",
+      description: t("carland"),
+      html_url: "https://github.com/wesleydematos/carland",
+      homepage: "https://carland-gamma.vercel.app/",
+    },
     {
       id: 570222011,
       name: "Pro Support",
