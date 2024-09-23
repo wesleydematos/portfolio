@@ -50,15 +50,14 @@ export const Home = (): JSX.Element => {
               </Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-              {t("i")}{" "}
+              {t("i")} {t("enjoy")}{" "}
               <Text as="span" type="heading1" color="brand1">
-                {t("love")}
-              </Text>{" "}
-              {t("creating")}{" "}
+                {t("creating")}{" "}
+              </Text>
+              {t("and")}{" "}
               <Text as="span" type="heading1" color="brand1">
                 {t("developing")}
-              </Text>{" "}
-              {t("projects")}
+              </Text>
             </Text>
             <Text type="body1" color="grey2">
               {t("sfDescription")}
