@@ -3,10 +3,9 @@ import {
   SiTypescript,
   SiDjango,
   SiMongodb,
-  SiTailwindcss,
+  SiNestjs,
 } from "react-icons/si";
 import {
-  FaGit,
   FaPython,
   FaHtml5,
   FaCss3Alt,
@@ -17,9 +16,21 @@ import {
   FaPhp,
   FaJava,
 } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
 
 export const stackData = [
+  {
+    title: "React",
+    img: FaReact,
+  },
+  { title: "React Native", img: TbBrandReactNative },
+  { title: "Next.js", img: TbBrandNextjs },
+  { title: "Vue JS", img: FaVuejs },
+  { title: "TypeScript", img: SiTypescript },
+  {
+    title: "JavaScript",
+    img: FaJs,
+  },
   {
     title: "HTML",
     img: FaHtml5,
@@ -28,27 +39,15 @@ export const stackData = [
     title: "CSS",
     img: FaCss3Alt,
   },
-  { title: "Tailwind CSS", img: SiTailwindcss },
-  { title: "Git", img: FaGit },
-  {
-    title: "JavaScript",
-    img: FaJs,
-  },
-  { title: "TypeScript", img: SiTypescript },
+  { title: "Nest JS", img: SiNestjs },
+  { title: "Python", img: FaPython },
+  { title: "Django", img: SiDjango },
   {
     title: "Node JS",
     img: FaNode,
   },
-  { title: "Vue JS", img: FaVuejs },
-  {
-    title: "React",
-    img: FaReact,
-  },
-  { title: "Python", img: FaPython },
-  { title: "Django", img: SiDjango },
-  { title: "MongoDB", img: SiMongodb },
-  { title: "PostgreSQL", img: SiPostgresql },
   { title: "PHP", img: FaPhp },
   { title: "Java", img: FaJava },
-  { title: "Next.js", img: TbBrandNextjs },
+  { title: "PostgreSQL", img: SiPostgresql },
+  { title: "MongoDB", img: SiMongodb },
 ];
