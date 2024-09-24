@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 
 export const Project = (): JSX.Element => {
   const { t } = useTranslation();
-  
+
   const repos = [
     {
       id: 575224459,
@@ -33,37 +33,19 @@ export const Project = (): JSX.Element => {
       homepage: "https://carland-gamma.vercel.app/",
     },
     {
-      id: 570222011,
-      name: "Pro Support",
-      language: "Node - React",
-      description: t("proSupport"),
-      html_url: "https://github.com/wesleydematos/ProSupport",
-      homepage: "https://pro-support.vercel.app/",
-    },
-    {
-      id: 570222872,
-      name: "NuKenzie",
-      language: "TypeScript - React",
-      description: t("nuKenzie"),
-      html_url: "https://github.com/wesleydematos/nukenzie",
-      homepage:
-        "https://react-entrega-s1-nu-kenzie-wesleydematos-3.vercel.app/",
-    },
-    {
-      id: 570224458,
-      name: "Kenziehub",
-      language: "TypeScript - React",
-      description: t("kenziehub"),
-      html_url: "https://github.com/wesleydematos/kenziehub",
-      homepage: "https://react-entrega-kenzie-hub-wesleymatos.vercel.app/",
-    },
-    {
       id: 570224459,
       name: "Soulful",
       language: "React",
       description: t("soulful"),
       html_url: "https://github.com/wesleydematos/digital-memory-passport",
       homepage: "https://soulfullab.xyz/",
+    },
+    {
+      id: 570264459,
+      name: "News APP",
+      language: "React Native",
+      description: t("newsApp"),
+      html_url: "https://github.com/wesleydematos/news-app",
     },
   ];
 
